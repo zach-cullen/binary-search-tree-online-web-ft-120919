@@ -3,15 +3,23 @@ class BST
     
   def initialize(data)
     @data = data
+    @left = nil
+    @right = nil
   end
     
   def insert(data)
     if data <= @data
       if @left.nil?
-        
-      self.left.insert(data)
+        @left = BST.new(data)
+      else
+        @left.insert(data)
+      end
     elsif data > self.data
-      self.right.insert(data)
+      if @right.nil?
+        @right = BST.new(data)
+      else
+        @right.insert(data)
+      end
     end
   end
 end
