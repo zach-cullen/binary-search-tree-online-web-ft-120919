@@ -21,7 +21,7 @@ class BST
     end
   end
   
-  def each
+  def each(&block)
     
   end
 end
