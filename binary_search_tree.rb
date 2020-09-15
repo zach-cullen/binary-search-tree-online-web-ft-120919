@@ -3,8 +3,6 @@ class BST
     
   def initialize(data)
     @data = data
-    @left = nil
-    @right = nil
   end
     
   def insert(data)
