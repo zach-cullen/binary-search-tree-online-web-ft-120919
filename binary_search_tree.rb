@@ -20,4 +20,8 @@ class BST
       end
     end
   end
+  
+  def each
+    
+  end
 end
