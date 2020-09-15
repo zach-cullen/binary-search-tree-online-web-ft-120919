@@ -22,8 +22,11 @@ class BST
   end
   
   def each(&block)
+    # if left branch exists go deeper before calling data since left will be less than
     @left.each(&block) if @left
-    @right.each(&block) if @right
+    # if no left call data since all less thans have been handled
     block.call(@data)
+    # if right exists go deeper after calling node data since current node data is less than right
+    @right.each(&block) if @right
   end
 end
