@@ -7,8 +7,8 @@ class BST
     
   def insert(data)
     if data <= @data
-      if self.left == nil
-        self.left = 
+      if @left.nil?
+        
       self.left.insert(data)
     elsif data > self.data
       self.right.insert(data)
