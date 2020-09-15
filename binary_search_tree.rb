@@ -7,17 +7,11 @@ class BST
     
   def insert(data)
     if data <= @data
+      if self.left == nil
+        self.left = 
       self.left.insert(data)
     elsif data > self.data
       self.right.insert(data)
     end
-  end
-  
-  def data
-    @root.data
-  end
-  
-  def insert(data)
-    @root.insert(data)
   end
 end
